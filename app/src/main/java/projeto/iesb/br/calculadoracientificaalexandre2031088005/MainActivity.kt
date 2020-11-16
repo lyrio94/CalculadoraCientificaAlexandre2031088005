@@ -9,9 +9,6 @@ open class MainActivity : AppCompatActivity() {
     private lateinit var tvmain: TextView
     public lateinit var tvsecundary: TextView
 
-    //private lateinit var tv2nd: TextView
-    //private lateinit var tvdeg: TextView
-    //private lateinit var tve: TextView
     private lateinit var tvIn: TextView
     private lateinit var tvsin: TextView
     private lateinit var tvcos: TextView
