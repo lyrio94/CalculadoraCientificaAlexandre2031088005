@@ -9,7 +9,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/tvpercentage"
+        android:id="@+id/tvPercentage"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/percentage"
@@ -24,7 +24,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvbackspace"
+        android:id="@+id/tvBackspace"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/backspace"
@@ -39,7 +39,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvclear"
+        android:id="@+id/tvClear"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/c"
@@ -54,7 +54,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvmultiply"
+        android:id="@+id/tvMultiply"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/multiply"
@@ -70,7 +70,7 @@
         app:layout_constraintVertical_bias="0.618" />
 
     <TextView
-        android:id="@+id/tvdivision"
+        android:id="@+id/tvDivision"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/division"
@@ -85,10 +85,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvcloseparentheses"
+        android:id="@+id/tvLparentheses"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:text="@string/closeparentheses"
+        android:text="@string/lparentheses"
         android:textAlignment="center"
         android:textColor="@color/material_on_primary_disabled"
         android:textSize="36sp"
@@ -101,7 +101,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <TextView
-        android:id="@+id/tvlg"
+        android:id="@+id/tvLg"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/lg"
@@ -117,7 +117,7 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <TextView
-        android:id="@+id/tvIn"
+        android:id="@+id/tvLn"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/in"
@@ -133,10 +133,10 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <TextView
-        android:id="@+id/tvopenparentheses"
+        android:id="@+id/tvRparentheses"
         android:layout_width="55dp"
         android:layout_height="55dp"
-        android:text="@string/openparentheses"
+        android:text="@string/rparentheses"
         android:textAlignment="center"
         android:textColor="@color/material_on_primary_disabled"
         android:textSize="36sp"
@@ -149,9 +149,9 @@
         app:layout_constraintVertical_bias="0.38" />
 
     <TextView
-        android:id="@+id/tvcos"
-        android:layout_width="140dp"
-        android:layout_height="53dp"
+        android:id="@+id/tvCos"
+        android:layout_width="132dp"
+        android:layout_height="46dp"
         android:text="@string/cos"
         android:textAlignment="center"
         android:textColor="@color/material_on_primary_disabled"
@@ -159,15 +159,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.453"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.271" />
+        app:layout_constraintVertical_bias="0.278" />
 
     <TextView
-        android:id="@+id/tvtan"
-        android:layout_width="132dp"
-        android:layout_height="50dp"
+        android:id="@+id/tvTan"
+        android:layout_width="138dp"
+        android:layout_height="46dp"
         android:scrollbarThumbHorizontal="@color/material_on_primary_disabled"
         android:text="@string/tan"
         android:textAlignment="center"
@@ -176,15 +176,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.963"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27" />
+        app:layout_constraintVertical_bias="0.277" />
 
     <TextView
-        android:id="@+id/tvsin"
-        android:layout_width="137dp"
-        android:layout_height="55dp"
+        android:id="@+id/tvSin"
+        android:layout_width="126dp"
+        android:layout_height="44dp"
         android:text="@string/sin"
         android:textAlignment="center"
         android:textColor="@color/material_on_primary_disabled"
@@ -192,15 +192,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintVertical_bias="0.281" />
 
     <TextView
-        android:id="@+id/tvelevate"
-        android:layout_width="86dp"
-        android:layout_height="47dp"
+        android:id="@+id/tvElevate"
+        android:layout_width="95dp"
+        android:layout_height="57dp"
         android:text="@string/x_y"
         android:textAlignment="center"
         android:textColor="@color/material_on_primary_disabled"
@@ -214,7 +214,7 @@
         app:layout_constraintVertical_bias="0.387" />
 
     <TextView
-        android:id="@+id/tvsquareroot"
+        android:id="@+id/tvSquareroot"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/squareroot"
@@ -229,7 +229,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvfatorial"
+        android:id="@+id/tvFatorial"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/fatorial"
@@ -245,7 +245,7 @@
         app:layout_constraintVertical_bias="0.618" />
 
     <TextView
-        android:id="@+id/tvfraction"
+        android:id="@+id/tvFraction"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_1_x"
@@ -261,7 +261,7 @@
         app:layout_constraintVertical_bias="0.727" />
 
     <TextView
-        android:id="@+id/tvequal"
+        android:id="@+id/tvEqual"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/equal"
@@ -277,7 +277,7 @@
         app:layout_constraintVertical_bias="0.976" />
 
     <TextView
-        android:id="@+id/tvdot"
+        android:id="@+id/tvDot"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/dot"
@@ -289,11 +289,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.766"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintTop_toBottomOf="@+id/tvNumber3"
+        app:layout_constraintVertical_bias="0.619" />
 
     <TextView
-        android:id="@+id/tvnumber9"
+        android:id="@+id/tvNumber9"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_9"
@@ -309,7 +309,7 @@
         app:layout_constraintVertical_bias="0.618" />
 
     <TextView
-        android:id="@+id/tvnumber6"
+        android:id="@+id/tvNumber6"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_6"
@@ -325,7 +325,7 @@
         app:layout_constraintVertical_bias="0.727" />
 
     <TextView
-        android:id="@+id/tvnumber5"
+        android:id="@+id/tvNumber5"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_5"
@@ -341,7 +341,7 @@
         app:layout_constraintVertical_bias="0.727" />
 
     <TextView
-        android:id="@+id/tvnumber7"
+        android:id="@+id/tvNumber7"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_7"
@@ -357,7 +357,7 @@
         app:layout_constraintVertical_bias="0.618" />
 
     <TextView
-        android:id="@+id/tvnumber2"
+        android:id="@+id/tvNumber2"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_2"
@@ -373,7 +373,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <TextView
-        android:id="@+id/tvplus"
+        android:id="@+id/tvPlus"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/plus"
@@ -389,7 +389,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <TextView
-        android:id="@+id/tvnumber3"
+        android:id="@+id/tvNumber3"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_3"
@@ -405,7 +405,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <TextView
-        android:id="@+id/tvnumber"
+        android:id="@+id/tvNumber"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_1"
@@ -421,7 +421,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <TextView
-        android:id="@+id/tvnumber4"
+        android:id="@+id/tvNumber4"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_4"
@@ -437,7 +437,7 @@
         app:layout_constraintVertical_bias="0.727" />
 
     <TextView
-        android:id="@+id/tvnumber8"
+        android:id="@+id/tvNumber8"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/_8"
@@ -453,9 +453,10 @@
         app:layout_constraintVertical_bias="0.618" />
 
     <TextView
-        android:id="@+id/tvnumber0"
+        android:id="@+id/tvNumber0"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/_0"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -464,12 +465,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.544"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.976" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/tvpi"
+        android:id="@+id/tvPi"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:text="@string/π"
@@ -485,7 +484,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <TextView
-        android:id="@+id/tvminus"
+        android:id="@+id/tvMinus"
         android:layout_width="73dp"
         android:layout_height="79dp"
         android:text="@string/less"
@@ -496,63 +495,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tvnumber6"
+        app:layout_constraintStart_toEndOf="@+id/tvNumber6"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.725" />
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="97dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="715dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="547dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="480dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="393dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="312dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="232dp" />
-
     <TextView
-        android:id="@+id/tvregister"
-        android:layout_width="367dp"
-        android:layout_height="96dp"
+        android:id="@+id/tvRegister"
+        android:layout_width="416dp"
+        android:layout_height="101dp"
         android:maxLength="15"
         android:scrollHorizontally="false"
         android:textAlignment="textEnd"
@@ -568,8 +518,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="405dp"
-        android:layout_height="91dp"
+        android:layout_width="409dp"
+        android:layout_height="98dp"
         android:layout_marginEnd="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -577,7 +527,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <TextView
-            android:id="@+id/tvsecundary"
+            android:id="@+id/tvSecundary"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"

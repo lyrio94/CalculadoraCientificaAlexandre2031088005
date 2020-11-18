@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">CalculadoraCientificaAlexandre2031088005</string>
-    <string name="testando">testando</string>
     <string name="_1">1</string>
     <string name="_2">2</string>
     <string name="_3">3</string>
@@ -8,7 +7,6 @@
     <string name="π">π</string>
     <string name="e">e</string>
     <string name="_0">0</string>
-    <string name="comma">,</string>
     <string name="equal">=</string>
     <string name="_1_x">1/x</string>
     <string name="_5">5</string>
@@ -27,8 +25,8 @@
     <string name="tang">tang</string>
     <string name="lg">lg</string>
     <string name="in">In</string>
-    <string name="openparentheses">(</string>
-    <string name="closeparentheses">)</string>
+    <string name="rparentheses">(</string>
+    <string name="lparentheses">)</string>
     <string name="less">-</string>
     <string name="multi">X</string>
     <string name="division">÷</string>

@@ -6,346 +6,308 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlin.math.*
 
 open class MainActivity : AppCompatActivity() {
-    private lateinit var tvmain: TextView
-    public lateinit var tvsecundary: TextView
-
-    //private lateinit var tv2nd: TextView
-    //private lateinit var tvdeg: TextView
-    //private lateinit var tve: TextView
-    private lateinit var tvIn: TextView
-    private lateinit var tvsin: TextView
-    private lateinit var tvcos: TextView
-    private lateinit var tvtan: TextView
-    private lateinit var tvelevate: TextView
-    private lateinit var tvlg: TextView
-    private lateinit var tvLparentheses: TextView
-    private lateinit var tvRparentheses: TextView
-    private lateinit var tvsquareroot: TextView
-    private lateinit var tvclear: TextView
-    private lateinit var tvbackspace: TextView
-    private lateinit var tvpercentage: TextView
-    private lateinit var tvfatorial: TextView
-    private lateinit var tvfraction: TextView
-    private lateinit var tvdivision: TextView
-    private lateinit var tvnumber7: TextView
-    private lateinit var tvnumber8: TextView
-    private lateinit var tvnumber9: TextView
-    private lateinit var tvmultiply: TextView
-    private lateinit var tvnumber4: TextView
-    private lateinit var tvnumber5: TextView
-    private lateinit var tvnumber6: TextView
-    private lateinit var tvminus: TextView
-    private lateinit var tvpi: TextView
-    private lateinit var tvnumber: TextView
-    private lateinit var tvnumber2: TextView
-    private lateinit var tvnumber3: TextView
-    private lateinit var tvplus: TextView
-    private lateinit var tvnumber0: TextView
-    private lateinit var tvdot: TextView
-    private lateinit var tvequal: TextView
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tvmain = findViewById(R.id.tvregister)
-        tvsecundary = findViewById(R.id.tvsecundary)
-        tvsin = findViewById(R.id.tvsin)
-        tvcos = findViewById(R.id.tvcos)
-        tvtan = findViewById(R.id.tvtan)
-        tvelevate = findViewById(R.id.tvelevate)
-        tvIn = findViewById(R.id.tvIn)
-        tvlg = findViewById(R.id.tvlg)
-        tvfatorial = findViewById(R.id.tvfatorial)
-        tvRparentheses = findViewById(R.id.tvopenparentheses)
-        tvLparentheses = findViewById(R.id.tvcloseparentheses)
-        tvsquareroot = findViewById(R.id.tvsquareroot)
-        tvclear = findViewById(R.id.tvclear)
-        tvbackspace = findViewById(R.id.tvbackspace)
-        tvpercentage = findViewById(R.id.tvpercentage)
-        tvfraction = findViewById(R.id.tvfraction)
-        tvnumber7 = findViewById(R.id.tvnumber7)
-        tvnumber8 = findViewById(R.id.tvnumber8)
-        tvnumber9 = findViewById(R.id.tvnumber9)
-        tvmultiply = findViewById(R.id.tvmultiply)
-        tvdivision = findViewById(R.id.tvdivision)
-        tvnumber4 = findViewById(R.id.tvnumber4)
-        tvnumber5 = findViewById(R.id.tvnumber5)
-        tvnumber6 = findViewById(R.id.tvnumber6)
-        tvminus = findViewById(R.id.tvminus)
-        tvpi = findViewById(R.id.tvpi)
-        tvnumber = findViewById(R.id.tvnumber)
-        tvnumber2 = findViewById(R.id.tvnumber2)
-        tvnumber3 = findViewById(R.id.tvnumber3)
-        tvplus = findViewById(R.id.tvplus)
-        tvnumber0 = findViewById(R.id.tvnumber0)
-        tvdot = findViewById(R.id.tvdot)
-        tvequal = findViewById(R.id.tvequal)
+        val tvMain = findViewById<TextView>(R.id.tvRegister)
+        val tvSecundary = findViewById<TextView>(R.id.tvSecundary)
+        val tvSin = findViewById<TextView>(R.id.tvSin)
+        val tvCos = findViewById<TextView>(R.id.tvCos)
+        val tvTan = findViewById<TextView>(R.id.tvTan)
+        val tvElevate = findViewById<TextView>(R.id.tvElevate)
+        val tvLn = findViewById<TextView>(R.id.tvLn)
+        val tvLg = findViewById<TextView>(R.id.tvLg)
+        val tvFatorial = findViewById<TextView>(R.id.tvFatorial)
+        val tvRparentheses = findViewById<TextView>(R.id.tvRparentheses)
+        val tvLparentheses = findViewById<TextView>(R.id.tvLparentheses)
+        val tvSquareroot = findViewById<TextView>(R.id.tvSquareroot)
+        val tvClear = findViewById<TextView>(R.id.tvClear)
+        val tvBackspace = findViewById<TextView>(R.id.tvBackspace)
+        val tvPercentage = findViewById<TextView>(R.id.tvPercentage)
+        val tvFraction = findViewById<TextView>(R.id.tvFraction)
+        val tvNumber7 = findViewById<TextView>(R.id.tvNumber7)
+        val tvnumber8 = findViewById<TextView>(R.id.tvNumber8)
+        val tvNumber9 = findViewById<TextView>(R.id.tvNumber9)
+        val tvMultiply = findViewById<TextView>(R.id.tvMultiply)
+        val tvDivision = findViewById<TextView>(R.id.tvDivision)
+        val tvNumber4 = findViewById<TextView>(R.id.tvNumber4)
+        val tvNumber5 = findViewById<TextView>(R.id.tvNumber5)
+        val tvNumber6 = findViewById<TextView>(R.id.tvNumber6)
+        val tvMinus = findViewById<TextView>(R.id.tvMinus)
+        val tvPi = findViewById<TextView>(R.id.tvPi)
+        val tvNumber = findViewById<TextView>(R.id.tvNumber)
+        val tvNumber2 = findViewById<TextView>(R.id.tvNumber2)
+        val tvNumber3 = findViewById<TextView>(R.id.tvNumber3)
+        val tvPlus = findViewById<TextView>(R.id.tvPlus)
+        val tvNumber0 = findViewById<TextView>(R.id.tvNumber0)
+        val tvDot = findViewById<TextView>(R.id.tvDot)
+        val tvEqual = findViewById<TextView>(R.id.tvEqual)
 
-        tvsin.setOnClickListener {
-            tvmain.text = ("""
-                    """ + tvmain.text.toString() + "sin" + """
+        tvSin.setOnClickListener {
+            tvMain.text = ("""
+                    """ + tvMain.text.toString() + "sin" + """
                     """).trimIndent()
         }
-        tvcos.setOnClickListener {
-            tvmain.text = ("""
-                    """ + tvmain.text.toString() + "cos" + """
+        tvCos.setOnClickListener {
+            tvMain.text = ("""
+                    """ + tvMain.text.toString() + "cos" + """
                     """).trimIndent()
         }
-        tvtan.setOnClickListener {
-            tvmain.text = ("""
-                    """ + tvmain.text.toString() + "tan" + """
+        tvTan.setOnClickListener {
+            tvMain.text = ("""
+                    """ + tvMain.text.toString() + "tan" + """
                     """).trimIndent()
         }
-        tvelevate.setOnClickListener {
-            tvmain.text = ("""
-                    """ + tvmain.text.toString() + "x^y" + """
+        tvElevate.setOnClickListener {
+            tvMain.text = ("""
+                    """ + tvMain.text.toString() + "x^y" + """
                     """).trimIndent()
         }
-        tvlg.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvlg.text.toString() + "" + """
+        tvLg.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvLg.text.toString() + "" + """
                     """).trimIndent()
         }
         tvLparentheses.setOnClickListener {
-            tvmain.text = ("""
-                    """ + tvmain.text.toString() + ")" + """
+            tvMain.text = ("""
+                    """ + tvMain.text.toString() + ")" + """
                     """).trimIndent()
         }
         tvRparentheses.setOnClickListener {
-            tvmain.text = ("""
-                    """ + tvmain.text.toString() + "(" + """
+            tvMain.text = ("""
+                    """ + tvMain.text.toString() + "(" + """
                     """).trimIndent()
         }
-        tvsquareroot.setOnClickListener {
-            val `val` = tvmain.text.toString()
+        tvSquareroot.setOnClickListener {
+            val `val` = tvMain.text.toString()
             val r = sqrt(`val`.toDouble())
             val result = r.toString()
-            tvmain.text = result
-            tvsecundary.text=
+            tvMain.text = result
+            tvSecundary.text=
                     ("""
                     """ + "√$`val`" +  "\n" + "" + """
                     """).trimIndent()
         }
-        tvclear.setOnClickListener {
-            tvmain.text = ""
-            tvsecundary.text=""
+        tvClear.setOnClickListener {
+            tvMain.text = ""
+            tvSecundary.text=""
         }
-        tvbackspace.setOnClickListener {
-            var `val` = tvmain.text.toString()
+        tvBackspace.setOnClickListener {
+            var `val` = tvMain.text.toString()
             `val` = `val`.substring(0, `val`.length - 1)
-            tvmain.text = `val`
+            tvMain.text = `val`
         }
-        tvpercentage.setOnClickListener {
-            var `val` = tvmain.text.toString().toDouble()
+        tvPercentage.setOnClickListener {
+            var `val` = tvMain.text.toString().toDouble()
             `val` /= 100
-            tvmain.text = ("""
+            tvMain.text = ("""
                     """ + String.format("%.2f", `val`) + "" + """
                     """).trimIndent()
             val value = `val` *100
-            tvsecundary.text=
+            tvSecundary.text=
                     ("""
                     """ + "$value%" +  "\n" + "" + """
                     """).trimIndent()
 
         }
-        tvdivision.setOnClickListener {
-            val `val` = tvmain.text.toString()
+        tvDivision.setOnClickListener {
+            val `val` = tvMain.text.toString()
             if (`val` != "") {
-                tvmain.text = ("""
-                    """ + `val` + tvdivision.text.toString() + "" + """
+                tvMain.text = ("""
+                    """ + `val` + tvDivision.text.toString() + "" + """
                     """).trimIndent()
             }
         }
 
-        tvfatorial.setOnClickListener {
-                val value = tvmain.text.toString().toInt()
+        tvFatorial.setOnClickListener {
+                val value = tvMain.text.toString().toInt()
             var i = 1
             var factorial: Long = 1
             while (i <= value) {
                 factorial *= i.toLong()
                 i++
             }
-            tvmain.text = factorial.toString()
-            tvsecundary.text=
+            tvMain.text = factorial.toString()
+            tvSecundary.text=
                     ("""
                     """ + "$value!" +  "\n" + "" + """
                     """).trimIndent()
         }
 
-        tvmultiply.setOnClickListener {
-            val `val` = tvmain.text.toString()
+        tvMultiply.setOnClickListener {
+            val `val` = tvMain.text.toString()
             if (`val` != "") {
-                tvmain.text = ("""
-                    """ + `val` + tvmultiply.text.toString() + "" + """
+                tvMain.text = ("""
+                    """ + `val` + tvMultiply.text.toString() + "" + """
                     """).trimIndent()
             }
         }
 
-        tvfraction.setOnClickListener {
-            val `val` = tvmain.text.toString()
-                tvmain.text=tvmain.text.toString()
+        tvFraction.setOnClickListener {
+            val `val` = tvMain.text.toString()
+                tvMain.text=tvMain.text.toString()
                 val r = `val`.toDouble()
-                tvmain.text=("""
+                tvMain.text=("""
                     """ +  1/r + "" + """
                     """).trimIndent()
-            tvsecundary.text=
+            tvSecundary.text=
                     ("""
                     """ +"1/" + `val` +  "\n" + "" + """
                     """).trimIndent()
             }
-        tvnumber0.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber0.text + """
+        tvNumber0.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber0.text + """
                     """).trimIndent()
         }
-        tvnumber.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber.text.toString() + """
+        tvNumber.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber.text.toString() + """
                     """).trimIndent()
         }
-        tvnumber2.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber2.text.toString() + """
+        tvNumber2.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber2.text.toString() + """
                     """).trimIndent()
 
         }
-        tvnumber3.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber3.text.toString() + """
+        tvNumber3.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber3.text.toString() + """
                     """).trimIndent()
         }
-        tvnumber4.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber4.text.toString() + """
+        tvNumber4.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber4.text.toString() + """
                     """).trimIndent()
         }
-        tvnumber5.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber5.text.toString() + """
+        tvNumber5.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber5.text.toString() + """
                     """).trimIndent()
         }
-        tvnumber6.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber6.text.toString() + """
+        tvNumber6.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber6.text.toString() + """
                     """).trimIndent()
         }
-        tvnumber7.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber7.text.toString() + "" + """
+        tvNumber7.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber7.text.toString() + "" + """
                     """).trimIndent()
         }
 
         tvnumber8.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = tvmain.text.toString()
-            tvmain.text = ("""
+            val `val` = tvMain.text.toString()
+            tvMain.text = tvMain.text.toString()
+            tvMain.text = ("""
                     """ + `val` + tvnumber8.text.toString() + "" + """
                     """).trimIndent()
         }
-        tvnumber9.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvnumber9.text.toString() + "" + """
+        tvNumber9.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvNumber9.text.toString() + "" + """
                     """).trimIndent()
         }
-        tvminus.setOnClickListener {
-            val `val` = tvmain.text.toString()
+        tvMinus.setOnClickListener {
+            val `val` = tvMain.text.toString()
             val last = `val`[`val`.length - 1]
             if (last != '-') {
-                tvmain.text = ("""
-                    """ + `val` + tvminus.text.toString() + """
+                tvMain.text = ("""
+                    """ + `val` + tvMinus.text.toString() + """
                     """).trimIndent()
             }
         }
 
-        tvpi.setOnClickListener {
-            val `val` = tvmain.text.toString()
+        tvPi.setOnClickListener {
+            val `val` = tvMain.text.toString()
             val r = 3.1415 *(`val`.toDouble())
             val result = r.toString()
-            tvmain.text = result
-            tvsecundary.text=
+            tvMain.text = result
+            tvSecundary.text=
                     ("""
                     """ + `val` + "*π"+ "\n" + "" + """
                     """).trimIndent()
 
         }
 
-        tvplus.setOnClickListener {
-            val `val` = tvmain.text.toString()
+        tvPlus.setOnClickListener {
+            val `val` = tvMain.text.toString()
             if (`val` != "") {
-                tvmain.text = ("""
-                    """ + `val` + tvplus.text.toString() + """
+                tvMain.text = ("""
+                    """ + `val` + tvPlus.text.toString() + """
                     """).trimIndent()
             }
         }
 
-        tvdot.setOnClickListener {
-            val `val` = tvmain.text.toString()
-            tvmain.text = ("""
-                    """ + `val` + tvdot.text + """
+        tvDot.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            tvMain.text = ("""
+                    """ + `val` + tvDot.text + """
                     """).trimIndent()
         }
-        tvequal.setOnClickListener {
-            if (tvmain.text.toString().contains("x^y")) {
-                val expression = tvmain.text.toString()
+        tvEqual.setOnClickListener {
+            if (tvMain.text.toString().contains("x^y")) {
+                val expression = tvMain.text.toString()
                 val aux = expression.replace("x^y", "Elevate")
                 val array = aux.split("Elevate".toRegex()).toTypedArray()
                 val x1 = array[0].toDouble()
                 val x2 = array[1].toDouble()
-                tvmain.text = ("""
+                tvMain.text = ("""
                     """ + x1.pow(x2).toString() + """
                     """).trimIndent()
-                tvsecundary.text = ("""
+                tvSecundary.text = ("""
                     """ + expression + "\n" + "\n").trimIndent()
-            } else if (tvmain.text.toString().contains("lg")) {
-                val expression = tvmain.text.toString()
+            } else if (tvMain.text.toString().contains("lg")) {
+                val expression = tvMain.text.toString()
                 val array = expression.split("lg".toRegex()).toTypedArray()
                 if (array[0].isEmpty()) {
                     val aux = array[1].toDouble()
-                    tvmain.text =
+                    tvMain.text =
                             ("""
                     """ + log10(aux).toString() + """
                     """).trimIndent()
-                    tvsecundary.text = ("""
+                    tvSecundary.text = ("""
                     """ + expression + "\n" + "\n").trimIndent()
                 } else {
                     val aux = array[0].toDouble()
-                    tvmain.text = ("""
+                    tvMain.text = ("""
                     """ + log10(aux).toString() + """
                     """).trimIndent()
-                    tvsecundary.text = ("""
+                    tvSecundary.text = ("""
                     """ + expression + "\n" + "\n").trimIndent()
                 }
             }
             else {
-                val `val` = tvmain.text.toString()
+                val `val` = tvMain.text.toString()
                 val replacedString = `val`.replace('÷', '/').replace('×', '*')
                 val result: Double = Eval.eval(replacedString)
                val r = result.toString()
-               tvmain.text = ("""
+               tvMain.text = ("""
                     """ + r + """
                     """).trimIndent()
-                tvsecundary.text = ("""
-                    """ + tvsecundary.text.toString() + `val` + "\n" + "\n").trimIndent()
+                tvSecundary.text = ("""
+                    """ + tvSecundary.text.toString() + `val` + "\n" + "\n").trimIndent()
            }
         }
 
-        tvIn.setOnClickListener {
-            val `val` = tvmain.text.toString()
+        tvLn.setOnClickListener {
+            val `val` = tvMain.text.toString()
             val r = ln(`val`.toDouble())
             val result = r.toString()
-            tvmain.text = result
+            tvMain.text = result
             }
         }
     }
