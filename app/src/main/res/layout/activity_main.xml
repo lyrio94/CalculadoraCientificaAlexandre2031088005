@@ -9,6 +9,37 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvEuler"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:text="@string/euler"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.311"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/tvNumber10"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
         android:id="@+id/tvPercentage"
         android:layout_width="55dp"
         android:layout_height="55dp"
@@ -453,21 +484,6 @@
         app:layout_constraintVertical_bias="0.618" />
 
     <TextView
-        android:id="@+id/tvNumber0"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/_0"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
         android:id="@+id/tvPi"
         android:layout_width="55dp"
         android:layout_height="55dp"
@@ -485,8 +501,8 @@
 
     <TextView
         android:id="@+id/tvMinus"
-        android:layout_width="73dp"
-        android:layout_height="79dp"
+        android:layout_width="53dp"
+        android:layout_height="57dp"
         android:text="@string/less"
         android:textAlignment="center"
         android:textColor="@color/yellow"
@@ -494,16 +510,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toEndOf="@+id/tvNumber6"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.725" />
+        app:layout_constraintVertical_bias="0.729" />
 
     <TextView
         android:id="@+id/tvRegister"
         android:layout_width="416dp"
         android:layout_height="101dp"
-        android:maxLength="15"
+        android:maxLength="13"
         android:scrollHorizontally="false"
         android:textAlignment="textEnd"
         android:textColor="#FFFFFF"

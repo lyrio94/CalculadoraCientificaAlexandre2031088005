@@ -41,9 +41,10 @@ open class MainActivity : AppCompatActivity() {
         val tvNumber2 = findViewById<TextView>(R.id.tvNumber2)
         val tvNumber3 = findViewById<TextView>(R.id.tvNumber3)
         val tvPlus = findViewById<TextView>(R.id.tvPlus)
-        val tvNumber0 = findViewById<TextView>(R.id.tvNumber0)
+        val tvNumber0 = findViewById<TextView>(R.id.tvEuler)
         val tvDot = findViewById<TextView>(R.id.tvDot)
         val tvEqual = findViewById<TextView>(R.id.tvEqual)
+        val tvEuler = findViewById<TextView>(R.id.tvEuler)
 
         tvSin.setOnClickListener {
             tvMain.text = ("""
@@ -233,14 +234,36 @@ open class MainActivity : AppCompatActivity() {
 
         tvPi.setOnClickListener {
             val `val` = tvMain.text.toString()
-            val r = 3.1415 *(`val`.toDouble())
-            val result = r.toString()
-            tvMain.text = result
-            tvSecundary.text=
-                    ("""
-                    """ + `val` + "*π"+ "\n" + "" + """
+            if (`val` == "") {
+                tvMain.text = ("""
+                    """ + 3.1415 + """
                     """).trimIndent()
+            }else{
+                val r = 3.1415 *(`val`.toDouble())
+                val result = r.toString()
+                tvMain.text = result
+                tvSecundary.text=
+                    ("""
+                    """ + `val` + "*e"+ "\n" + "" + """
+                    """).trimIndent()
+            }
 
+        }
+        tvEuler.setOnClickListener {
+            val `val` = tvMain.text.toString()
+            if (`val` == "") {
+                tvMain.text = ("""
+                    """ + 2.7182 + """
+                    """).trimIndent()
+            }else{
+                val r = 2.7182 *(`val`.toDouble())
+                val result = r.toString()
+                tvMain.text = result
+                tvSecundary.text=
+                    ("""
+                    """ + `val` + "*e"+ "\n" + "" + """
+                    """).trimIndent()
+            }
         }
 
         tvPlus.setOnClickListener {

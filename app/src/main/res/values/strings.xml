@@ -5,7 +5,6 @@
     <string name="_3">3</string>
     <string name="plus">+</string>
     <string name="π">π</string>
-    <string name="e">e</string>
     <string name="_0">0</string>
     <string name="equal">=</string>
     <string name="_1_x">1/x</string>
@@ -18,8 +17,6 @@
     <string name="x">X!</string>
     <string name="squareroot">√X</string>
     <string name="x_y">X^y</string>
-    <string name="_2nd">2nd</string>
-    <string name="deg">deg</string>
     <string name="cos">cos</string>
     <string name="sin">sin</string>
     <string name="tang">tang</string>
@@ -37,4 +34,5 @@
     <string name="dot">.</string>
     <string name="multiply">x</string>
     <string name="fatorial">X!</string>
+    <string name="euler">e</string>
 </resources>
